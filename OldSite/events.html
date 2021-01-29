@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<--!
+<html>
+
+	<head>
+		<link type="text/css" media='screen' rel="stylesheet" href="css/stylesheet.css"/>
+		<title>
+			Computer Science Club @ GSU
+		</title>
+		<link rel="shortcut icon" href="images/csClubLogo.ico">
+	</head>
+	
+	<body>
+		<script>
+			function unhide(divID) {
+				var item = document.getElementById(divID);
+				var all  = document.getElementsByClassName('unhidden');
+				for (var i = 0; i < all.length; i++)
+					all[i].className = 'hidden';
+				if (item)
+					item.className = 'unhidden';
+			}
+		</script>
+		<div id="header">
+            <table>
+                <tr>
+                    <td><a href="index.html"><img src="images/csClubLogo.jpg"/></a></td>
+                    <td><h1>Computer Science Club</h1></td>
+                    <td><a href="http://cs.gsu.edu"><img src="images/dept.jpg"/></a></td>
+                </tr>
+            </table>        
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="officers.html">Officers</a></li>
+                <li><a href="advisor.html">Advisor</a></li>
+<!--                 <li>Members</li>
+                <li>Join Us</li> -->
+            </ul>
+        </div>
+        
+		<table>
+		<tr>
+		
+		<td>
+			<div id ="contentEvents" align="center">
+				<!-- <h2 align="center">Calendar of Events</h2> -->
+	<!--            <iframe src="https://www.google.com/calendar/embed?src=badjr1%40gmail.com&ctz=America/New_York" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe>-->
+				<!-- <iframe src="https://www.google.com/calendar/embed?src=gsucscclub%40gmail.com&ctz=America/New_York" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe> -->
+
+				
+					<div class="row">
+						<a href="#hide2" class="hide" id="hide2">Spring 2016</a>
+						<a href="#show2" class="show" id="show2">Spring 2016</a>
+
+						<!--Event List-->
+						<div class="list">
+							<table>
+								<tr>
+									<th>Event</th>
+									<th>Date</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td><a href="javascript:unhide('gamenightElec');" title="More Info">April First Friday Night & New Officer Elections</a></td>
+									<td>Friday, April 18th at 4 PM - 8 PM</td>
+									<td>25 Park Place 7th Floor Conference Room</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:unhide('gamenightSp');" title="More Info">Game Night #2</a></td>
+									<td>Friday, March 28th at 5 PM - 8 PM</td>
+									<td>25 Park Place 7th Floor Conference Room</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:unhide('gamenightSp');" title="More Info">Game Night</a></td>
+									<td>Friday, February 7th at 5 PM - 9 PM</td>
+									<td>25 Park Place 7th Floor Conference Room</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="row">
+						<a href="#hide1" class="hide" id="hide1">Fall 2015</a>
+						<a href="#show1" class="show" id="show1">Fall 2015</a>
+
+						<!--Event List-->
+						<div class="list">
+							<table>
+								<tr>
+									<th>Event</th>
+									<th>Date</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td><a href="javascript:unhide('gamenight');" title="More Info">Game Night</a></td>
+									<td>11/21/2013 at 5:30 PM - 9:30 PM</td>
+									<td>25 Park Place 7th Floor Conference Room</td>
+								</tr>
+								<tr>
+									<td>Movie Night: WarGames</td>
+									<td>10/24/2013 at 6:30 PM - 9:00 PM</td>
+									<td>25 Park Place 7th Floor Conference Room</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:unhide('machinelearning');" title="More Info">Machine Learning Discussion Group</a></td>
+									<td>Semester Long</td>
+									<td>TBA</td>
+								</tr>
+								<tr>
+									<!---<td><a href="event1.html" title="Click for pictures from the event">Social</a></td>--->
+									<td><a href="javascript:unhide('social');" title="Click for pictures from the event">Social</a></td>
+									<td>9/13/2013 at 11:30 AM - 12:30 PM</td>
+									<td>25 Park Place 7th Floor Conference Room</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				
+				<div id="gamenightElec" class="unhidden">
+					<h2>
+						CS Club Presents: "Game Night #3 & New Officer Elections Spring 2014"
+					</h2>
+					<p>Come play board games, or just hang out with the community of CS students at our department!</p>
+
+					<p>Door prizes and refreshments served!</p>
+					
+					<p>Additionally, new officer elections will be held.</p>
+				</div>
+				
+				<div id="gamenightSp" class="hidden">
+					<h2>
+						CS Club Presents: "Game Night Spring 2015"
+					</h2>
+					<p>Come play board games and poker, or just hang out with the community of CS students at our department!</p>
+
+					<p>Door prizes!</p>
+					<p>Refreshments served!</p>
+				</div>				
+				
+				<div id="gamenight" class="hidden">
+					<h2>
+						CS Club Presents: "Game Night"
+					</h2>
+					<p>Dear members,</p>
+
+					<p>As semester goes to its end, before Thanksgiving break we propose to have a good time together!</p>
+
+					<p>Please join us this Thursday night as we will play board games and poker, and enjoy some refreshments in each other's good company. 
+					There would be a raffle with several door prizes -- just stop by to try your luck!</p>
+
+					<p>Please feel free to bring friends, as all CS Club events are free and open for public.</p>
+
+					<p>More info in the flyer attached. Please <a href="https://docs.google.com/forms/d/1K-iamYj_3mLd1TJYvDWmdaEWxX0PFydi9cobyWydvBI/viewform">fill in the form</a> to let us know your preferences as we prepare necessary number of games and stuff. Feel free to email me back me any suggestions (especially if you'd like to bring your own game to play!).</p>
+
+					<p>Thank you!</p>
+
+					<p>Sincerely,</p>
+					<p>Olga, CS Club</p>
+				</div>
+				
+				<div id="machinelearning" class="hidden">
+					<h2>
+						CS Club presents: "Machine Learning discussion group"
+					</h2>
+					<p>
+					Dear all,
+					</p>
+					<p>We are glad to present a series of workshops where we will be reading and discussing a book on machine learning and solving practical problems.</p>
+					<p>BOOK: Kevin Murphy "Machine Learning: A Probabilistic Perspective";</p>
+					<p>The book assumes basic knowledge of linear algebra, optimization, and probability theory. But! Don't be afraid to stop by even if you feel weak in this areas - you would probably find someone willing to help. 
+					If you are interested and do not currently have a copy of the book, we will help as well.</p>
+					<p>Join us every Friday 12 pm @ 25 Park Placer., conference room.</p>
+					<p>To be included in this group mailing list, please send me (Olga) a message with your email. Thanks!</p>
+					<p>All CS Club events are free and open for everyone! You don't have to be a member to attend.</p>
+					<p>This is a first discussion group of several planned. If you would like to be a leader of any discussion group, please email us with your ideas. To give you an example: interested in bioinformatics? You may create a group which will be reading top scientific papers on particular topic, let say on NGS technologies. We will help you to find groupmates, and will provide food for the meetings! Sounds good? Then email me (Olga) asap!</p>
+					<p>Email Olga for details and/or to receive Machine Learning email updates: glebova[at]cs.gsu.edu</p>
+				</div>
+				
+				<div id ="social" align="center" class="hidden">
+					<h2 align="center">Event: Social</h2>
+					<h3>Location: 34 Peachtree, 7th floor, Conference Room 1432</h3>
+					<h3>When: Friday, 9/13/2013 from 11:30 PM - 12:30 PM</h3>
+			
+					<img src="images/9-13-2013/11.jpg" alt="rotating image" width="560" height="460" id="rotator">
+
+					<script type="text/javascript">
+						(function() {
+							var rotator = document.getElementById('rotator'), //get the element
+							dir = 'images/9-13-2013/',                              //images folder
+							delayInSeconds = 1,                           //delay in seconds
+							num = 1,                                      //start number
+							len = 11;
+						//if (document.getElementByID('social').className == 'hidden') {
+							setInterval(function() {                           //interval changer
+								rotator.src = dir + num+'.jpg';               //change picture
+								num = (num === len) ? 0 : ++num;              //reset if last image reached
+							}, delayInSeconds * 3000);
+							}());
+						//}
+					</script>
+				</div>
+				
+			</div>	
+				
+		</td>
+		
+		<td>
+		<div id="calendarDiv">
+			<h3 align="center">Calendar of Events</h3>
+			<iframe src="https://www.google.com/calendar/embed?src=gsucscclub%40gmail.com&ctz=America/New_York" style="border: 0" width="350" height="250" frameborder="0" scrolling="no"></iframe>
+			
+		</div>
+		</td>
+		
+		</tr>
+		</table>  
+    </body>
+
+</html>
+-->
